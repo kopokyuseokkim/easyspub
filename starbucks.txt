@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('starbucksData.csv', encoding = 'cp949')
+df = pd.read_csv('starbucksData.csv', encoding = 'cp949', usecols = ['평당가(만원)', '스타벅스까지의 소요시간(분)'])
 
 coef = df.corr(method = 'pearson')
 print(coef)
