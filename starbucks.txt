@@ -1,0 +1,12 @@
+import pandas as pd
+
+df = pd.read_csv('starbucksData.csv', encoding = 'cp949')
+
+coef = df.corr(method = 'pearson')
+print(coef)
+
+coef = df.corr(method = 'spearman')
+print(coef)
+
+coef = df.corr(method = 'kendall')
+print(coef)
