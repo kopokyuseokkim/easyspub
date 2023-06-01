@@ -1,0 +1,9 @@
+import pandas as pd
+
+x = [50, 60, 70, 80]
+y = [60, 70, 80, 90]
+
+df = pd.DataFrame({"cheolsoo" : x, "youngsoo" : y})
+
+coef = df.corr(method = 'pearson')
+print(coef)
